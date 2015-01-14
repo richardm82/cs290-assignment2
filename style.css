@@ -1,0 +1,86 @@
+/*** Style for doc1.html (Tables) ***/
+
+#demo-table {
+  font: 100% sans-serif;
+  background-color: #efe;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+
+#demo-table table, th, td{
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
+#demo-table > caption {
+  text-align: left;
+  font-weight: bold;
+  font-size: 200%;
+  border-bottom: .1em solid #4af;
+  margin-bottom: .5em;
+}
+
+
+/* basic shared rules */
+#demo-table th,
+#demo-table td {
+  text-align: center;
+  padding: .5em;
+}
+
+#demo-table th {
+  font-weight: bold;
+  padding-left: .5em;
+ 
+}
+
+/* header */
+#demo-table > thead > tr:first-child > th {
+  text-align: center;
+  color: black;
+  font-style: normal;
+  background-color: white;
+}
+
+/* first column */
+#demo-table th {
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* body */
+
+/* even non-header/footer rows have light blue background */
+#demo-table tr:nth-child(odd) {
+  background-color: lightblue;
+
+}
+
+/* odd non-header/footer rows have light green background */
+#demo-table tr:nth-child(even) {
+  background-color: lightgreen;
+
+}
+
+/* first non-header cell red */
+#demo-table td:nth-child(2){
+  color: red;
+}
+
+/* third non-header cell blue */
+#demo-table td:nth-child(4){
+  color: blue;
+}
+
+/* footer */
+#demo-table tfoot {
+  font-weight: bold;
+}
+
+#demo-table > tfoot > tr > td {
+  background-color: white;
+}
+
+#demo-list dt:focus:hover {
+  background-color: blue;
+}
