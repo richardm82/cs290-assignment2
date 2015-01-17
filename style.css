@@ -81,6 +81,22 @@
   background-color: white;
 }
 
-#demo-list dt:focus:hover {
+#demo-list dt:hover  +dd{
+  background-color: purple;
+}
+.outer-content {
+  width: 75%;
+  height:5em;
+  background-color: pink;
+  position:relative;
+}
+.inner-content {
+  width: 75%;
   background-color: blue;
+  color:black;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:50%;
+  transform:translate(-50%, -50%)
 }
